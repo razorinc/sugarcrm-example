@@ -1,0 +1,27 @@
+Quickstart
+==========
+
+1) Create an account at http://openshift.redhat.com/
+2) Create a php-5.3 application and attach mysql to it:
+    $ rhc-create-app -a sugarcrm -t php-5.3
+    $ rhc-ctl-app -a sugarcrm -e add-mysql-5.1
+3) Add this upstream drupal repo
+    $ cd sugarcrm
+    $ git remote add upstream -m master git://github.com/openshift/sugarcrm-example.git
+    $ git pull -s recursive -X theirs upstream master
+4) Then push the repo upstream
+    $ git push
+5) That's it, you can now checkout your application at:
+    http://sugarcrm-$yourlogin.rhcloud.com
+6) Default Admin Username: admin
+   Default Admin Password: admin
+
+
+Updates
+=======
+
+In order to update or upgrade to the latest version of SugarCRM, use the in-app
+upgrade tool ( see http://www.sugarcrm.com/crm/support/documentation/SugarCommunityEdition )
+
+Do not use git to upgrade. If you need to update your instance, use the rhc-snapshot tool to pull down changes first to
+incorporate them into your local install ( see http://docs.redhat.com/docs/en-US/OpenShift_Express/1.0/html/User_Guide/sect-User_Guide-OpenShift_Express_Application_Development-Downloading_OpenShift_Express_Applications.html for details )

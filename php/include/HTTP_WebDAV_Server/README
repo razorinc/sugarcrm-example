@@ -1,4 +1,4 @@
-This code depends on code introduced into the developement branch for
+This code depends on code introduced into the development branch for
 PHP 4.3, so it will not run with PHP releases before 4.3.0
 
 preliminary documentation is available in the dav.txt file,

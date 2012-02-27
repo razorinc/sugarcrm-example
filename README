@@ -23,5 +23,5 @@ Updates
 In order to update or upgrade to the latest version of SugarCRM, use the in-app
 upgrade tool ( see http://www.sugarcrm.com/crm/support/documentation/SugarCommunityEdition )
 
-Do not use git to upgrade. If you need to update your instance, use the rhc app snapshot tool to pull down changes first to
+Do not use git to upgrade. If you need to update your instance, use the 'rhc app snapshot save' tool to pull down changes first to
 incorporate them into your local install ( see http://docs.redhat.com/docs/en-US/OpenShift_Express/1.0/html/User_Guide/sect-User_Guide-OpenShift_Express_Application_Development-Downloading_OpenShift_Express_Applications.html for details )
